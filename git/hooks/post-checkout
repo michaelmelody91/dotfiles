@@ -1,0 +1,13 @@
+#!/bin/sh
+
+git fetch
+git pull
+
+echo 'post checkout'
+
+FILE=package.json
+if [ -f "$FILE" ]; then
+    echo "node project. yarn install..."
+    yarn install
+fi
+

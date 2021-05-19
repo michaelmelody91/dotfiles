@@ -107,6 +107,7 @@ alias rmdimg='docker rmi $(docker images -f "dangling=true" -q)'
 ## Directory
 alias repos='cd ~/Repositories'
 alias mm91='cd ~/Repositories/michaelmelody91'
+alias dlds='cd ~/Downloads'
 
 export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 alias ls='ls -lthaG'
@@ -115,6 +116,14 @@ alias show-all='defaults write com.apple.finder AppleShowAllFiles YES; killall F
 alias hide-all='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 alias yml='yq -C r -'
+alias j2y='yq r -P -'
+alias y2j='yq r --tojson -P -'
+
+alias form='cd /Users/michaelmelody/Repositories/globalization-partners/gp-form-service'
+alias ui='cd /Users/michaelmelody/Repositories/globalization-partners/gp-goglobal-ui'
+alias setup='cd /Users/michaelmelody/Repositories/globalization-partners/gp-goglobal-dev-setup'
+alias flowp='cd /Users/michaelmelody/Repositories/globalization-partners/gp-flow-definition-processor'
+alias classic='cd /Users/michaelmelody/Repositories/globalization-partners/gp-go-global'
 
 ## Open apps
 alias ij='idea .'
@@ -238,6 +247,10 @@ eval "$(jenv init -)"
 
 # trash-cli
 alias rm=trash
+
+# node
+alias db='export DEBUG=*'
+alias dbo='export DEBUG='
 
 # tabtab source for packages
 # uninstall by removing these lines
